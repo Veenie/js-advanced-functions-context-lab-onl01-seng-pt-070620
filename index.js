@@ -36,3 +36,5 @@ function createEmployeeRecord(arr){
 function createEmployeeRecords(arr){
   return arr.map(emp => createEmployeeRecord(emp))
 }
+
+
