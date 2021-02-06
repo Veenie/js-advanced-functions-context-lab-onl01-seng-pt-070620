@@ -37,4 +37,16 @@ function createEmployeeRecords(arr){
   return arr.map(emp => createEmployeeRecord(emp))
 }
 
+let createTimeInEvent = function(employee, dateStamp){
+      let [date, hour] = dateStamp.split(' ')
+
+    employee.timeInEvents.push({
+        type: "TimeIn",
+        hour: parseInt(hour, 10),
+        date,
+    })
+
+    return employee
+}
+
 
